@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Welcome to the Orienteering"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:paddingTop="10px"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_view_id1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Understanding a new city by orienteering yourself to some of the rarest artworks!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:paddingTop="10px"
+        android:layout_below="@+id/text_view_id"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundcorner"
+        android:src="@drawable/dresden"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Location"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickStartMap"/>
+</RelativeLayout>
