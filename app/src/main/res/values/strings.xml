@@ -4,4 +4,6 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This is an app widget description</string>
+    <string name="MainActivity3">Opens the new activity</string>
+    <string name="maintext3">"Now that you have understood the orientation of the city that you are in, use the route provided to explore all the places you missed identifying! :)</string>
 </resources>

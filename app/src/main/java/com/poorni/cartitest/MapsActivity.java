@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -18,7 +19,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
-import android.widget.Button;
+
+
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -27,7 +29,13 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.maps.android.data.Feature;
+import com.google.maps.android.data.Layer;
+import com.google.maps.android.data.geojson.GeoJsonLayer;
+import com.google.maps.android.data.geojson.GeoJsonPolygonStyle;
 import com.poorni.cartitest.databinding.ActivityMapsBinding;
+
+import org.json.JSONException;
 
 import java.io.IOException;
 import java.util.List;
@@ -138,17 +146,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
         mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style));
         mMap.setMyLocationEnabled(true);
-    }
+        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
+        GeoJsonLayer layer = null;
+
+        try {
+            layer = new GeoJsonLayer(mMap, R.raw.dresdentest,
+                    getApplicationContext());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        layer.addLayerToMap();
+
+    }
 
     private void setMarkerAtmyLocation() {
         if (userCurrentLocation != null) {
-            Log.v("curent_lat_long", "lat:" + userCurrentLocation.getLatitude() + ",longitute:" + userCurrentLocation.getLongitude());
+            Log.v("current_lat_long", "lat:" + userCurrentLocation.getLatitude() + ",longitute:" + userCurrentLocation.getLongitude());
             mMap.clear();
             Geocoder geocoder = new Geocoder(this);
             String userAddress = "";
             try {
-                List<Address> addressList = geocoder.getFromLocation(userCurrentLocation.getLatitude(), userCurrentLocation.getLongitude(), 5);
+                List<Address> addressList = geocoder.getFromLocation(userCurrentLocation.getLatitude(), userCurrentLocation.getLongitude(), 20);
                 Address address = addressList.get(0);
                 userAddress = address.getLocality() + "," + address.getAdminArea() + "," + address.getCountryName() + "," + address.getPostalCode();
                 binding.edtLocation.setText("" + userAddress);
@@ -160,18 +182,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.addMarker(new MarkerOptions().position(myLocation).title("" + userAddress));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 20.0f));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 25.0f));
         }
-
-        mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(0, 0))
-                .title("Marker"));
-        mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(51.0532409, 13.7436732))
-                .title("Marker1"));
-        mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(38.0603359, 19.9922236))
-                .title("Marker1"));
 
 
         // Add a marker in Sydney and move the camera
@@ -195,8 +207,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 getUserCurrentLocation();
                 setMarkerAtmyLocation();
                 break;
-            case R.id.btnnext:
-                Intent intent = new Intent(MapsActivity.this, MainActivity3.class);
         }
     }
 }

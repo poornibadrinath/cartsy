@@ -1,0 +1,148 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.7385409,51.05729662 ]
+    },
+    "properties": {
+    "id":1,
+    "name":"Canaletto Blick",
+    "img":"https://drive.google.com/file/d/1nW8ENsGUfuL_i3BVdi6VujmtLvF35JHN/view",
+    "hint":"an inspiring view and window to the past"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.74095365,51.04817749 ]
+    },
+    "properties": {
+    "id":2,
+    "name":"Goldener Rathausmann",
+    "img":"https://drive.google.com/file/d/1dvLOZ6ZY2vn6ynhHZQlgtZ8VMolrX1v_/view",
+    "hint":"a golden man that sees the city from above"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.73676761,51.05848858 ]
+    },
+    "properties": {
+    "id":3,
+    "name":"Milchpavillion",
+    "img":"https://drive.google.com/file/d/1acYo3iAF1KgPnSHKiKbSCrBzvRIL76BP/view",
+    "hint":"little bells that sounds by the river"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.73888699,51.05288545 ]
+    },
+    "properties": {
+    "id":4,
+    "name":"Fürstenzug",
+    "img":"https://drive.google.com/file/d/13OWw85o9Cot9FDjNaN131EiyIsFWBPNM/view",
+    "hint":"a princes parade"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.73530286,51.05456528 ]
+    },
+    "properties": {
+    "id":5,
+    "name":"Semperoper Dresden",
+    "img":"https://drive.google.com/file/d/1NSr8KgrO75vkeCQgcA9k8Hmscvv20Ff0/view",
+    "hint":"an historic house of music"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.74136117,51.05337373 ]
+    },
+    "properties": {
+    "id":6,
+    "name":"Erde und Planeten",
+    "img":"https://drive.google.com/file/d/1mr350YzlyRz493AZVPtuq5_SYiIub34r/view",
+    "hint":"an astronomic path to walk by"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.74452703,51.0559614 ]
+    },
+    "properties": {
+    "id":7,
+    "name":"Small Dog",
+    "img":"https://drive.google.com/file/d/18paKBBLz69Y2VyrNeEDNO3K40bqFJP7g/view",
+    "hint":"a small dog that weigths 4 tons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.74618827,51.06364145 ]
+    },
+    "properties": {
+    "id":8,
+    "name":"Junge auf der Mauer",
+    "img":"https://drive.google.com/file/d/1bojMEFoU3uqIffeFltz-vWxirOoqGeyN/view",
+    "hint":"a kid that is seated over a wall"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.73877614,51.05411787 ]
+    },
+    "properties": {
+    "id":9,
+    "name":"Postbriefkasten",
+    "img":"https://drive.google.com/file/d/1hYx6s-HBRhPxsYpZS_fwXmxby6pS_NTf/view",
+    "hint":"a curious location for a post box"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.74504214,51.05177165 ]
+    },
+    "properties": {
+    "id":10,
+    "name":"Galerie Neue Meister",
+    "img":"https://drive.google.com/file/d/1obnQHoraWUrX8cdHz9Fal6xzvNgyKyH1/view",
+    "hint":"art in the walls inviting you to enter the museum"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.73352122,51.03874631 ]
+    },
+    "properties": {
+    "id":11,
+    "name":"Marie Gey Brunnen",
+    "img":"https://drive.google.com/file/d/1i8peyySq3FKxU3abEZC_pgDJ2tqxeLKq/view",
+    "hint":"a powerful woman that welcomes you in the city"
+    }
+  }
+]
+}

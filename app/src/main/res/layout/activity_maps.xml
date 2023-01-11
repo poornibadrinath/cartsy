@@ -5,6 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="Next" />
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -46,11 +52,5 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         />
-    <Button
-        android:id="@+id/btnnext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="next activity"
-        android:onClick="goToMainActivity3"
-        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
