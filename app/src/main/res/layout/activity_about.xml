@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="607dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="410dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/dresdenart"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_width="154dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/cartoone"
+        android:gravity="center"
+        android:paddingTop="40px"
+        android:text=""
+        android:textColor="@color/hotpink"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_id1"
+        android:layout_width="400dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/secural"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/Art"
+        android:textColor="@color/green_tinge"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_id" />
+
+    <TextView
+        android:id="@+id/text_view_id2"
+        android:layout_width="390dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/merienda"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/carto"
+        android:textColor="@color/green_tinge"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_id1" />
+
+    <TextView
+        android:id="@+id/text_view_id3"
+        android:layout_width="361dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/merienda"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:text="@string/carto1"
+        android:textColor="@color/green_tinge"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id4"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_id2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_id2" />
+
+    <TextView
+        android:id="@+id/text_view_id4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/merienda"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:text="@string/carto2"
+        android:textColor="@color/green_tinge"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_id3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="onClickStartMap"
+        android:text="Show all items on map"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_id4" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        app:itemBackground="@color/hotpink"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list"
+        app:menu="@menu/menu_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

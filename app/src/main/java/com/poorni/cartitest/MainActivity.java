@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+
         // on below line we are calling handler to run a task
         // for specific time interval
         new Handler().postDelayed(new Runnable() {
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 // on below line we are
                 // creating a new intent
-                Intent i = new Intent(MainActivity.this, MainActivity2.class);
+                Intent i = new Intent(MainActivity.this, About.class);
 
                 // on below line we are
                 // starting a new activity.
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 // our current activity.
                 finish();
             }
-        }, 2000);
+        }, 3000);
 
     }
 }

@@ -1,9 +1,18 @@
 <resources>
-    <string name="app_name">cartitest</string>
+    <string name="app_name">CartoO</string>
     <string name="title_activity_maps">MapsActivity</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
-    <string name="app_widget_description">This is an app widget description</string>
-    <string name="MainActivity3">Opens the new activity</string>
-    <string name="maintext3">"Now that you have understood the orientation of the city that you are in, use the route provided to explore all the places you missed identifying! :)</string>
+    <string name="MainActivity3">Dashboard</string>
+    <string name="Art">Art is a fantastic form to connect with people, and one of the most amazing ways to explore a new city. While there are tons of tour apps to specifically take you there, there is something different when you try and explore them yourself.</string>
+    <string name="carto">Cart-O is an app specifically made for explorers that like to go on an unexplored path.\n The ones who want to try new things and understand how a city is built and what makes the place tick! It is not designed to give you a specific route but will give you hints as to what you are going to look for and where you might find them.</string>
+    <string name="carto1">Follow the arrows and faint lines on the map to orient yourself to some of the rare art pieces of Dresden and get to know this quaint little city a little better!</string>
+    <string name="carto2">Welcome to the mapping world! Happy orienteering\n</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
 </resources>

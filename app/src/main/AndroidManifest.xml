@@ -25,8 +25,8 @@
         android:theme="@style/Theme.Cartitest"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity3"
-            android:exported="true"
+            android:name=".Dashboard"
+            android:exported="false"
             android:label="@string/MainActivity3">
             <meta-data
                 android:name="android.app.lib_name"
@@ -52,7 +52,7 @@
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".About"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
