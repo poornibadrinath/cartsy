@@ -25,6 +25,13 @@
         android:theme="@style/Theme.Cartitest"
         tools:targetApi="31">
         <activity
+            android:name=".PopWindow"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Dashboard"
             android:exported="false"
             android:label="@string/MainActivity3">

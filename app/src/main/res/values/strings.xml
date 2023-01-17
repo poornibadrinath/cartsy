@@ -13,6 +13,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
-
+    <string name="name">Canaletto Blick</string>
+    <string name="fun_fact">Canaletto's work was crucial to rebuild the city after WWII</string>
+    <string name="description">This view inspired Bernardo Bellotto, known as Canaletto, to paint Dresden from the "Right Bank of the Elbe below the Augustus Bridge". Take a look through the frame and see how much has changed this city from the 18th century until now, following one of the most relevant urban landscape depictions of Dresden.</string>
 </resources>
